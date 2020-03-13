@@ -11,8 +11,6 @@
 
 body { margin: 0; background-color: white; font-family: Arial, Helvetica, sans-serif;}
 
-.cover {	width: 100%; background-image: url("https://i.imgur.com/K5vPCl3.png"); opacity: 0.65;}
-
 img { opacity: 0.65;}
 
 .sidebar{
@@ -66,18 +64,24 @@ li a:hover { background-color: #111; color: white;}
 	text-align: left;
 }
 
-@media screen and (max-width: 600px) {
-  topnav li {float: none;}
+@media screen and (min-height: 1280px) {
+	ul{
+		margin-left: 0%;
+		width:100%;
+	}
+	.sidebar{
+		display:none;
+	}
+	.content{
+		margin-left:0%;
+	}
+	.cover{
+		display: top;
+	}
 }
 
 </style>
 <body>
-
-<!--<nav>
-	<div class="cover">
-		<img src="https://i.imgur.com/K5vPCl3.png"></img>
-	</div>
-</nav>-->
 
 <nav class="sidebar">
 	<div class="bgimg"></div>
