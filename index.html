@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+* { box-sizing: border-box;}
+
+body { margin: 0; background-color: white; font-family: Arial, Helvetica, sans-serif;}
+
+.cover {	width: 100%; background-image: url("https://i.imgur.com/K5vPCl3.png"); opacity: 0.65;}
+
+img { opacity: 0.65;}
+
+.sidebar{
+	height: 100%;
+	width: 38.2%;
+	position: fixed!important;
+	z-index: 1;
+	overflow:auto;
+}
+
+.bgimg{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	background-image: url("https://i.imgur.com/yZaaG6b.jpg"); 
+	min-height: 100%;
+}
+
+ul {
+	position: fixed;
+  float: right;
+  width: 61.8%;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 10%;
+  margin-left: 38.2%;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+  width: 25%;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10%;
+  text-decoration: none;
+}
+
+li a:hover { background-color: #111; color: white;}
+
+.content {
+	margin-left: 38.2%;
+	padding: 3%;
+	color: black;
+	text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  topnav li {float: none;}
+}
+
+</style>
+<body>
+
+<!--<nav>
+	<div class="cover">
+		<img src="https://i.imgur.com/K5vPCl3.png"></img>
+	</div>
+</nav>-->
+
+<nav class="sidebar">
+	<div class="bgimg"></div>
+</nav>
+
+<nav>
+	<div>
+		<ul>
+  		<li><a href="#home">Home</a></li>
+ 			<li><a href="#about">About</a></li>
+ 			<li><a href="#portfolio">Portfolio</a></li>
+ 			<li><a href="#contact">Contact</a></li>
+ 		</ul>
+	</div> 
+</nav>
+
+<nav>
+<div id="home" class="content">
+	<header>
+		<h1 style="padding-top:30%; font-size:243%"><b>Francesco Tenace</b></h1>
+		<p>Java Developer</p>
+	</header>
+	<h2 id="about" style="padding-top:10%">About</h2>
+		<hr/>
+		<p>Hello World!</p>
+		<p style="padding-right:10%">I'm Francesco, and I was born in 1998 in San Severo (FG), Italy. When I was attending Computer Engineering, I learnt the basics of Object-Oriented Programming and I really got into it, which since then became one of my passions. I spend most of my time working at my personal projects, trying to learn as much as possible about coding. I'm also a musician, and a Linux enthusiast</p>
+	<h2 id="portfolio" style="padding-top:10%">Portfolio</h2>
+		<hr/>
+		<p>Here are my personal projects:</p>
+		<p>My Telegram bot: <a target="_blank" href="https://t.me/F10aceBot" style="color:black">@F10aceBot</a></p>
+		<p>I upload some of my projects to GitHub: <a target="_blank" href="https://github.com/francescoTenace" style="color:black">@francescoTenace</a></p>
+	<h2 style="padding-top:10%">Skills</h2>
+		<p>Java</p>
+		<p>MySQL</p>
+		<p>HTML</p>
+		<p>CSS</p>
+		<p>Regex</p>
+		<p>Linux</p>
+		<p>JavaScript</p>
+	<h2 id="contact" style="padding-top:10%">Contact</h2>
+		<p><i class="fa fa-envelope"> </i>  E-mail:  <a target="_blank" href="mailto:frncsctenace@gmail.com" style="color:black">frncsctenace@gmail.com</a></p>
+		<p><i class="fa fa-telegram"> </i>  Telegram:  <a target="_blank" href="https://t.me/F_Tenace" style="color:black">@F_Tenace</a></p>
+</div>
+</nav>
+
+</body>
+
+</html>
